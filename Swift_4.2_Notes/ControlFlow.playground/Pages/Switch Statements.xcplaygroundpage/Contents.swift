@@ -39,12 +39,92 @@ for airportCode in airportCodes {
     }
 }
 
-var randomTemperature = Int(arc4random_uniform(UInt32(150)))
+import GameKit
+
+let randomTemperature = GKRandomSource.sharedRandom().nextInt(upperBound: 150)
 
 switch randomTemperature {
-case 0..<32: print("Forget it, stay inside")
-case 32...45: print("Wear a jacket")
-case 45..<70: print("A little chilly")
-case 70...100: print("It is hot out")
-default: print("It is really hot dude")
+case 0..<32: print("Weather is to cold do not go out!!")
+case 32..<45: print("Its quite cold youll need a jacket")
+case 45..<70: print("Its a bit cold, maybe swear a jumper")
+case 70...100: print("It is hot wear a T-shirt")
+default: print("Dont bother to go out")
 }
+
+
+// Code Challenge
+func fizzBuzz(n: Int) -> String {
+    // Enter your code between the two comment markers
+    if n % 3 == 0 && n % 5 == 0 {
+        return "FizzBuzz"
+    }
+        
+    else if n % 3 == 0 {
+        return "Fizz"
+    }
+        
+    else if n % 5 == 0 {
+        return "Buzz"
+    }
+    
+    // End code
+    return "\(n)"
+}
+// Code Challenge --------------
+
+
+// Code Challenge
+var europeanCapitals: [String] = []
+var asianCapitals: [String] = []
+var otherCapitals: [String] = []
+
+let world = [
+    "BEL": "Brussels",
+    "LIE": "Vaduz",
+    "BGR": "Sofia",
+    "USA": "Washington D.C.",
+    "MEX": "Mexico City",
+    "BRA": "Brasilia",
+    "IND": "New Delhi",
+    "VNM": "Hanoi"]
+
+for (key, value) in world {
+    // Enter your code below
+    switch key {
+    case "VNM", "IND":
+        asianCapitals.append(value)
+    case "BEL","LIE", "BGR":
+        europeanCapitals.append(value)
+        
+    default:
+        otherCapitals.append(value)
+    // End code
+}
+    // print(asianCapitals, europeanCapitals, otherCapitals)
+}
+// Code Challenge --------------
+
+
+
+// Code Challenge
+// FizzBuzz Challenge
+func fizzBuzz(n: Int) -> String {
+    // Enter your code between the two comment markers
+    if n % 3 == 0 && n % 5 == 0 {
+        return "FizzBuzz"
+    } else if n % 5 == 0 {
+        return "Buzz"
+    } else if n % 3 == 0 {
+        return "Fizz"
+    }
+    // End code
+    return "\(n)"
+}
+
+fizzBuzz(n: 2)
+fizzBuzz(n: 10)
+fizzBuzz(n: 7)
+fizzBuzz(n: 21)
+fizzBuzz(n: 48)
+// Code Challenge --------------
+
