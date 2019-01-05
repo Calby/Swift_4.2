@@ -13,13 +13,13 @@ let address = country + ", " + state + ", " + city
 
 let nweAddress = "\(country), \(state), \(city)"
 
-// Quiz
+// Code Challenge
 let name = "James"
 let greeting = "Hi there, \(name)"
 let finalGreeting = "\(greeting)" + ". How are you?"
 
 
-// Quiz
+// Code Challenge
 let firstValue = 2
 let secondValue = 4
 let product = firstValue * secondValue
