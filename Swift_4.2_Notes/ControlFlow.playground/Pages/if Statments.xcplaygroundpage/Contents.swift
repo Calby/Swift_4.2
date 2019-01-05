@@ -29,3 +29,17 @@ if temperatureInFahrenheit <= 32 {
     print("It's really warm. Don't forget to wear sunscreen.")
 }
 
+
+// Code Challenge
+// So if the remainder of n / 2 isn't 0 and the remainder of n / 7 is 0 then do put n into results...
+var results: [Int] = []
+
+for n in 1...100 {
+    // Enter your code below
+    if !(n % 2 == 0) && (n % 7 == 0){
+        results.append(n)
+    }
+    // End code
+}
+
+

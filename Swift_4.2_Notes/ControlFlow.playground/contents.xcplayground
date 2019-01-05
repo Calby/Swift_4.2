@@ -5,5 +5,6 @@
         <page name='Repeat-While'/>
         <page name='While Loop'/>
         <page name='logical operator'/>
+        <page name='Switch Statements'/>
     </pages>
 </playground>

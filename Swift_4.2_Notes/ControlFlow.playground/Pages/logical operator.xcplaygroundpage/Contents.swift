@@ -48,7 +48,8 @@ if  enteredDoorCode && passedRetinaScan || hasDoorKey || knowsOverridePassword {
 
 // - - Explicit parentheses
 if (enteredDoorCode && passedRetinaScan) || hasDoorKey || knowsOverridePassword {
-    / / brackets increase readability
+    // brackets increase readability
     print("Welcome!")
 } else {
     print("ACCESS DENIEDE")
+}
