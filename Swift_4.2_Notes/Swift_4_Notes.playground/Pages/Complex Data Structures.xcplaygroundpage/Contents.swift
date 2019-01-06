@@ -10,12 +10,6 @@ let y1 = 0 // These two data points must be related.
 let coodrinate1: (x: Int, y: Int) = (0,0) // tuple, to return two values
 coodrinate1.x
 
-/*--CODE CHALLENGE-----------------------------------------------------------*/
-struct User{
-    let name: String
-    let age: Int
-}
-
 struct Point { // Structs are blueprints, a data structure of stored properties. An Object.
     let x: Int // define properties to store values
     let y: Int // ^^
@@ -60,6 +54,24 @@ let coordinatePoint = Point(x: 0, y: 0) // this creates an instance of the struc
 coordinatePoint.x
 coordinatePoint.points()
 
+/*--CODE CHALLENGE-----------------------------------------------------------*/
+struct User{
+    let name: String
+    let age: Int
+}
+
+
+/*--CODE CHALLENGE-----------------------------------------------------------*/
+struct Book {
+    let title: String
+    let author: String
+    let price: Double
+}
+
+// Enter your code below
+// Instance of above struct
+let myBook = Book(title: "Animal Farm", author: "George Orwell", price: 6.00)
+
 
 /*--CODE CHALLENGE-----------------------------------------------------------*/
 
@@ -68,7 +80,7 @@ struct Person {
     let firstName: String
     let lastName: String
     
-    func fullName () -> String {
+    func fullName() -> String {
         var result: String = ""
         result = ("\(firstName ) \(lastName)")
         
@@ -81,25 +93,28 @@ let myFullName = aPerson.fullName()
 
 /*--CODE CHALLENGE-----------------------------------------------------------*/
 
-struct RGBColour { // Create structure
+struct RGBColor { // Create structure
     let red: Double // create constants to pass into structure
     let green: Double
     let blue: Double
     let alpha: Double
+    
     let description: String
     
-    init(red: Double, green: Double, blue: Double, alpha: Double) { // initialise constants with values?
-        
+    // Add your code below
+    
+    init(red: Double, green: Double, blue: Double, alpha: Double) {
         self.red = red
         self.green = green
         self.blue = blue
         self.alpha = alpha
         
-        description = ("red: \(red), green: \(green), blue: \(blue), alpha: \(alpha)") // initilise description constant string with values
-        
-        
+        self.description = "red: \(red), green: \(green), blue: \(blue), alpha: \(alpha)"
     }
 }
 
+// "red: 86.0, green: 191.0, blue: 131.0, alpha: 1.0"
+let color = RGBColor(red: 86.0, green: 191.0, blue: 131.0, alpha: 1.0)
+print(color.description)
 
 //: [Next](@next)

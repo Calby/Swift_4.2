@@ -7,5 +7,11 @@
         <page name='Control Flow'/>
         <page name='Functions'/>
         <page name='Complex Data Structures'/>
+        <page name='Classes'/>
+        <page name='Enumerations'/>
+        <page name='Optionals'/>
+        <page name='Pattern Matching'/>
+        <page name='ErrorHandling'/>
+        <page name='Protocols'/>
     </pages>
 </playground>
